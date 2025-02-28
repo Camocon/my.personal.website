@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Project</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4);
+            color: white;
+            text-align: center;
+        }
 
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-bottom: 5px solid #ff9800;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+            font-style: italic;
+            color: #ffeb3b;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffeb3b;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #ffeb3b;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .player-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-size: 22px;
+        }
+
+        .player-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ff9800;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .player-list li:hover {
+            background-color: #ff5722;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .player-list li {
+                font-size: 18px;
+            }
+
+            .image-section img {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Basketball Project</h1>
+        <p>Explore the exciting world of basketball</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Basketball</a>
+        <a href="#players">Famous Players</a>
+        <a href="#image">Basketball Image</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Basketball</h2>
+            <p>Basketball is a thrilling team sport played by two teams of five players each. The goal is to score by shooting the ball into the opponent's hoop. The game involves speed, skill, and exciting action, and is played all over the world at both professional and amateur levels.</p>
+        </section>
+
+        <section id="players">
+            <h2>Famous Basketball Players</h2>
+            <ul class="player-list">
+                <li>Michael Jordan</li>
+                <li>LeBron James</li>
+                <li>Kobe Bryant</li>
+                <li>Stephen Curry</li>
+                <li>Shaquille O'Neal</li>
+            </ul>
+        </section>
+
+        <section id="image" class="image-section">
+            <h2>Basketball Action</h2>
+            <img src="https://example.com/basketball.jpg" alt="Basketball Game">
+            <p>Exciting action on the basketball court during a game.</p>
+        </section>
+    </div>
+
+</body>
+</html>
