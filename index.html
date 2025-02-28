@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NBA Fan Zone</title>
+  <title>NBA Fan Zone - Interactive Games & Stats</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -17,6 +17,7 @@
       <li><a href="#team">Team</a></li>
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#stats">Stats</a></li>
+      <li><a href="#game">Play Game</a></li>
     </ul>
   </nav>
 
@@ -24,29 +25,17 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Welcome to the NBA Fan Zone</h1>
-      <p>Your ultimate destination for NBA news, stats, and updates on your favorite players.</p>
+      <p>Explore stats, play games, and become a true NBA fan.</p>
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section id="team" class="team-section">
-    <h2>Meet the NBA Superstars</h2>
-    <div class="team-members">
-      <div class="player-card" onclick="showPlayerStats('LeBron James')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/LeBron_James_2019.jpg/800px-LeBron_James_2019.jpg" alt="LeBron James">
-        <h3>LeBron James</h3>
-        <p>Position: Forward</p>
-      </div>
-      <div class="player-card" onclick="showPlayerStats('Stephen Curry')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Stephen_Curry_2016.jpg/800px-Stephen_Curry_2016.jpg" alt="Stephen Curry">
-        <h3>Stephen Curry</h3>
-        <p>Position: Guard</p>
-      </div>
-      <div class="player-card" onclick="showPlayerStats('Kawhi Leonard')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Kawhi_Leonard_in_2019.jpg" alt="Kawhi Leonard">
-        <h3>Kawhi Leonard</h3>
-        <p>Position: Forward</p>
-      </div>
+  <!-- NBA Shooting Game Section -->
+  <section id="game" class="game-section">
+    <h2>NBA Shooting Game</h2>
+    <p>Try your skills with our basketball shooting game! Can you hit the hoops?</p>
+    <div id="game-container">
+      <canvas id="gameCanvas" width="600" height="400"></canvas>
+      <button id="startButton">Start Game</button>
     </div>
   </section>
 
@@ -54,30 +43,17 @@
   <section id="stats" class="stats-section">
     <h2>Player Statistics</h2>
     <div id="player-stats">
-      <!-- Player stats will be dynamically displayed here -->
+      <!-- Stats will be dynamically added here -->
     </div>
   </section>
 
-  <!-- Schedule Section -->
-  <section id="schedule" class="schedule-section">
-    <h2>Upcoming NBA Matches</h2>
-    <table>
-      <tr>
-        <th>Opponent</th>
-        <th>Date</th>
-        <th>Location</th>
-      </tr>
-      <tr>
-        <td>Los Angeles Lakers vs Golden State Warriors</td>
-        <td>March 1, 2025</td>
-        <td>Staples Center, LA</td>
-      </tr>
-      <tr>
-        <td>Brooklyn Nets vs Los Angeles Clippers</td>
-        <td>March 5, 2025</td>
-        <td>Barclays Center, Brooklyn</td>
-      </tr>
-    </table>
+  <!-- NBA Quiz Game Section -->
+  <section id="quiz" class="quiz-section">
+    <h2>NBA Quiz: Test Your Knowledge!</h2>
+    <div id="quiz-container">
+      <button onclick="startQuiz()">Start Quiz</button>
+      <div id="quiz-content"></div>
+    </div>
   </section>
 
   <!-- Footer -->
