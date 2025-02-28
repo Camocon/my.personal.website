@@ -1,45 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NBA Fan Zone - Interactive Games & Stats</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple NBA Game (HTML only)</title>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">NBA Fan Zone</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#game">Play Game</a></li>
-    </ul>
-  </nav>
+    <h1>Welcome to the NBA Fan Zone</h1>
+    <p>Click the button below to start the game:</p>
 
-  <!-- Home Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to the NBA Fan Zone</h1>
-      <p>Explore stats, play games, and become a true NBA fan.</p>
+    <!-- Static Image of Basketball Game -->
+    <div>
+        <img src="https://example.com/basketball-hoop.jpg" alt="Basketball Hoop" width="400">
+        <p>This is the basketball hoop. Click the button to start your game!</p>
     </div>
-  </section>
 
-  <!-- NBA Shooting Game Section -->
-  <section id="game" class="game-section">
-    <h2>NBA Shooting Game</h2>
-    <p>Try your skills with our basketball shooting game! Can you hit the hoops?</p>
-    <div id="game-container">
-      <canvas id="gameCanvas" width="600" height="400"></canvas>
-      <button id="startButton">Start Game</button>
-    </div>
-  </section>
+    <!-- Static Button (no action without JavaScript) -->
+    <button onclick="alert('Game started!')">Start Game</button>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 NBA Fan Zone. All rights reserved.</p>
-  </footer>
+    <p>Good luck! Try to score a basket!</p>
 
 </body>
 </html>
