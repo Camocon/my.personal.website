@@ -24,7 +24,7 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Welcome to the NBA Fan Zone</h1>
-      <p>Your one-stop destination for NBA news, stats, and updates.</p>
+      <p>Your ultimate destination for NBA news, stats, and updates on your favorite players.</p>
     </div>
   </section>
 
@@ -32,25 +32,29 @@
   <section id="team" class="team-section">
     <h2>Meet the NBA Superstars</h2>
     <div class="team-members">
-      <div class="player-card">
+      <div class="player-card" onclick="showPlayerStats('LeBron James')">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/LeBron_James_2019.jpg/800px-LeBron_James_2019.jpg" alt="LeBron James">
         <h3>LeBron James</h3>
         <p>Position: Forward</p>
-        <button onclick="showPlayerStats('LeBron James')">View Stats</button>
       </div>
-      <div class="player-card">
+      <div class="player-card" onclick="showPlayerStats('Stephen Curry')">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Stephen_Curry_2016.jpg/800px-Stephen_Curry_2016.jpg" alt="Stephen Curry">
         <h3>Stephen Curry</h3>
         <p>Position: Guard</p>
-        <button onclick="showPlayerStats('Stephen Curry')">View Stats</button>
       </div>
-      <div class="player-card">
+      <div class="player-card" onclick="showPlayerStats('Kawhi Leonard')">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Kawhi_Leonard_in_2019.jpg" alt="Kawhi Leonard">
         <h3>Kawhi Leonard</h3>
         <p>Position: Forward</p>
-        <button onclick="showPlayerStats('Kawhi Leonard')">View Stats</button>
       </div>
-      <!-- Add more players as needed -->
+    </div>
+  </section>
+
+  <!-- Player Stats Section -->
+  <section id="stats" class="stats-section">
+    <h2>Player Statistics</h2>
+    <div id="player-stats">
+      <!-- Player stats will be dynamically displayed here -->
     </div>
   </section>
 
@@ -73,16 +77,7 @@
         <td>March 5, 2025</td>
         <td>Barclays Center, Brooklyn</td>
       </tr>
-      <!-- More games can be added here -->
     </table>
-  </section>
-
-  <!-- Stats Section -->
-  <section id="stats" class="stats-section">
-    <h2>Player Statistics</h2>
-    <div id="player-stats">
-      <!-- Stats will be displayed dynamically here -->
-    </div>
   </section>
 
   <!-- Footer -->
