@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cam's Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: #333;
-            margin-top: 20px;
-        }
-        .container {
-            padding: 20px;
-        }
-        .image-container {
-            margin-top: 30px;
-        }
-        .image-container img {
-            width: 50%;
-            max-width: 600px;
-        }
-        .giraffe-container img {
-            width: 50%;
-            max-width: 600px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Fan Zone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to Cam's Personal Website!</h1>
-    
-    <div class="container">
-        <p>Hi, I'm Cam. Welcome to my personal page. Below you'll find a basketball GIF and a cool giraffe!</p>
-        
-        <!-- Basketball GIF -->
-        <div class="image-container">
-            <h2>Check out this awesome basketball GIF:</h2>
-            <img src="https://media.giphy.com/media/l0HlQ7VNEKAYODdIc/giphy.gif" alt="Basketball GIF">
-        </div>
-        
-        <!-- Giraffe Image -->
-        <div class="giraffe-container">
-            <h2>And here's a giraffe for fun:</h2>
-            <img “`<img src="https://example.com/giraffe.jpg" alt="Giraffe">`”="https://example.com
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Basketball Fan Zone</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#stats">Stats</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Basketball Fan Zone</h1>
+      <p>Your one-stop destination for all basketball news, stats, and updates.</p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+      <div class="player-card">
+        <img src="https://via.placeholder.com/150" alt="Player 1">
+        <h3>Player 1</h3>
+        <p>Position: Guard</p>
+        <button onclick="showPlayerStats('Player 1')">View Stats</button>
+      </div>
+      <div class="player-card">
+        <img src="https://via.placeholder.com/150" alt="Player 2">
+        <h3>Player 2</h3>
+        <p>Position: Forward</p>
+        <button onclick="showPlayerStats('Player 2')">View Stats</button>
+      </div>
+      <!-- More players can be added here -->
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule-section">
+    <h2>Upcoming Matches</h2>
+    <table>
+      <tr>
+        <th>Opponent</th>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td>Team A</td>
+        <td>March 1, 2025</td>
+        <td>Home</td>
+      </tr>
+      <tr>
+        <td>Team B</td>
+        <td>March 5, 2025</td>
+        <td>Away</td>
+      </tr>
+      <!-- More games can be added here -->
+    </table>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats-section">
+    <h2>Player Statistics</h2>
+    <div id="player-stats">
+      <!-- Stats for players will be displayed here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Basketball Fan Zone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
